@@ -1,0 +1,202 @@
+/* ცვლადები */
+:root {
+  /* ფერი */
+  --c-light: hsl(160, 0%, 94%);
+  --c-dark-medium: hsl(160, 0%, 70%);
+  --c-dark: hsl(160, 0%, 20%);
+  --c-darker: hsl(160, 0%, 10%);
+  --c-base: hsl(160, 60%, 40%);
+  /* ზომა */
+  /* ჩარჩო */
+  --br-large: calc(30 / 16 * 1rem);
+  /* სივრცე */
+  --sp-smaller: calc(5 / 16 * 1rem);
+  --sp-medium: calc(20 / 16 * 1rem);
+  --sp-large: calc(36 / 16 * 1rem);
+  --sp-larger: calc(48 / 16 * 1rem);
+  --sp-largest: calc(76 / 16 * 1rem);
+  /* შრიფტი */
+  --fs-smallest: calc(12 / 16 * 1rem);
+  --fs-smaller: calc(14 / 16 * 1rem);
+  --fs-normal: calc(16 / 16 * 1rem);
+  --fs-medium: calc(18 / 16 * 1rem);
+  --fs-large: calc(28 / 16 * 1rem);
+  --fs-larger: calc(36 / 16 * 1rem);
+  --fs-largest: calc(48 / 16 * 1rem);
+}
+/* საწყისი / resets */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+body,
+a {
+  color: var(--c-darker);
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+fieldset,
+input,
+select,
+textarea,
+button {
+  border: none;
+}
+/* საერთო / commons */
+.row {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.no-screen {
+  display: none;
+}
+button {
+  background-color: transparent;
+}
+.d-wrapper {
+  margin-inline: auto;
+  width: 70%;
+}
+@font-face {
+  font-family: academy;
+  src: url(./fonts/AcademyFilled3D.ttf);
+}
+@font-face {
+  font-family: m_popins;
+  src: url(./fonts/Poppins-MediumItalic.ttf);
+}
+@font-face {
+  font-family: s_popins;
+  src: url(./fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: georgian;
+  src: url(./fonts/NotoSerifGeorgian_Condensed-SemiBold.ttf);
+}
+body {
+  background-image: url(./photo/man-welder.jpg);
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+}
+.heading {
+  width: 100%;
+  height: 180px;
+
+  display: flex;
+
+  align-items: center;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 360px;
+  margin-left: 50px;
+}
+.registration {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 40px;
+  margin-right: 50px;
+}
+.title {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.main_title {
+  font-weight: 700;
+  font-size: 80px;
+  font-family: academy;
+  color: rgba(124, 213, 16, 0.997);
+}
+.losung {
+  font-weight: 500;
+  font-size: 25px;
+  font-family: m_popins;
+  color: rgb(244, 99, 37);
+}
+.registr {
+  width: 200px;
+  height: 60px;
+  border-radius: 25px;
+  background-color: rgb(255, 251, 127);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: georgian;
+}
+
+.main_conteiner {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.animation {
+  width: 60px;
+  height: 60px;
+  margin-right: 200px;
+  position: relative;
+}
+.welder {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: movingwelder;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes movingwelder {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.navigation {
+  width: 100%;
+  height: 60px;
+  display: flex;
+
+  align-items: center;
+  gap: 50px;
+}
+.mainer {
+  width: 200px;
+  height: 50px;
+  border-radius: 28px;
+  background-color: black;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: georgian;
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
