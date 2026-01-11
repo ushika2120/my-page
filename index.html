@@ -7,144 +7,183 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="title_bar">
       <div class="heading">
         <div class="logo_box">
           <div class="animation">
-            <img
-              class="welder"
-              src="./icons/welding-mask icon.png"
-              alt="welder icon"
-            />
+            <img class="welder" src="./photo/logo7.png" alt="welder icon" />
+          </div>
+          <div class="title">
+            <h1 class="main_title">LUGER</h1>
+          </div>
+          <div class="registration">
+            <div class="submit">
+              <button class="registr">რეგისტრაცია</button>
+            </div>
+            <div class="or">
+              <img
+                class="finger"
+                src="./icons/left-right.svg"
+                alt="finger icon"
+              />
+            </div>
+            <div class="login">
+              <button class="registr">ავტორიზაცია</button>
+            </div>
           </div>
         </div>
-        <div class="title">
-          <h1 class="main_title">LUGER</h1>
-        </div>
 
-        <div class="main_conteiner">
+        <div class="conteiner">
           <div class="navigation">
             <nav class="navigation">
               <form action="#">
-                <select class="mainest" name="about" id="mainer">
-                  <option value="main">მთავარი</option>
-                  <option value="aboutus">ჩვენს შესახებ</option>
-                  <option value="practic">გამოცდილება</option>
-                  <option value="team">ჩვენი გუნდი</option>
-                </select>
+                <p class="mainer">მთავარი</p>
               </form>
               <form action="#">
                 <select class="mainer" name="about" id="product">
-                  <option value="product">ჩვენი პროდუქცია</option>
-                  <option value="door">კარი</option>
-                  <option value="inerier">ინტერიერის ავეჯი</option>
-                  <option value="exterier">ექსტერიერის ავეჯი</option>
-                  <option value="constuction">რკინის კონსტრუქცია</option>
+                  <option value="door">ჩვენს შესახებ</option>
+                  <option value="door">ჩვენი გუნდი</option>
+                  <option value="inerier">პროდუქცია</option>
+                  <option value="exterier">გამოცდილება</option>
                 </select>
               </form>
               <form action="#">
-                <select class="mainest" name="about" id="contact">
+                <select class="mainer" name="about" id="contact">
                   <option value="contact">კონტაქტი</option>
                   <option value="adress">მისამართი</option>
                   <option value="mobile">მობილური</option>
                   <option value="social">სოციალური ქსელი</option>
                 </select>
               </form>
-              <form action="#">
-                <select class="mainest" name="about" id="photo">
-                  <option value="photo">ფოტო</option>
-                  <option value="video">ვიდეო</option>
-                </select>
-              </form>
             </nav>
           </div>
-        </div>
-        <div class="search">
-          <form action="#">
-            <label for="lsearch"></label>
+          <div class="search">
+            <form action="#">
+              <label for="lsearch"></label>
 
-            <input
-              class="gsearch"
-              type="search"
-              id="lsearch"
-              placeholder="საძიებო სიტყვა ..."
-            />
-            <img
-              class="lupa"
-              src="./icons/magnifying-glass-solid-full.svg"
-              alt="lupa"
-            />
-          </form>
-        </div>
-        <div class="registration">
-          <div class="submit">
-            <button class="registr">რეგისტრაცია</button>
+              <input
+                class="gsearch"
+                type="search"
+                id="lsearch"
+                placeholder="საძიებო სიტყვა ..."
+              />
+              <img
+                class="lupa"
+                src="./icons/magnifying-glass-solid-full.svg"
+                alt="lupa"
+              />
+            </form>
           </div>
-          <p class="or">ან</p>
-          <div class="login">
-            <button class="registr">ავტორიზაცია</button>
+        </div>
+        <div class="soc_cell">
+          <div class="lf_size">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="cent">
+            <div class="fb">
+              <a href="https://www.facebook.com/levan.ushikishvili.1">
+                <img class="soc" src="./icons/facebook.svg" alt="facebook" />
+              </a>
+            </div>
+            <div class="tktk">
+              <a href="https://www.tiktok.com/@luger1983">
+                <img class="soc" src="./icons/tiktokl.svg" alt="tiktok" />
+              </a>
+            </div>
+            <div class="ytb">
+              <a href="https://www.youtube.com/@le1yushika128"
+                ><img class="soc" src="./icons/youtube.svg" alt="youtube"
+              /></a>
+            </div>
+          </div>
+          <div class="lf_size">
+            <div class="up"></div>
+
+            <div class="down"></div>
           </div>
         </div>
       </div>
     </header>
-    <main>
+    <main class="main_box">
       <div class="head_box">
-        <p class="losung">თქვენს სურვილებს ჩვენ ვამზადებთ</p>
+        <h1 class="losung">თქვენს სურვილებს ჩვენ ვამზადებთ</h1>
       </div>
+
       <div class="middel">
         <div class="box">
-          <ul>
-            <li>
-              <h2 class="h_text">გამოცდილება</h2>
-            </li>
-            <li>
-              <p class="s_text">
-                ჩვენი გამოცდილება გამოწვეულია განსხვავებული ხასიათის და
-                სირთულეების პროექტების განხორციელებით.
-              </p>
-            </li>
-            <li>
-              <p class="s_text">
-                ჩვენს მიერ განხორციელებული პროექტები მოიცავს როგორც მცირე ,
-                ასევე მსხვილი პროექტების შექმნა-რეალიზებას.
-              </p>
-            </li>
-          </ul>
-          <img class="photo" src="./photo/IMG_1054 (1).PNG" alt="table" />
+          <div class="text">
+            <ul>
+              <li>
+                <h2 class="h_text">გამოცდილება</h2>
+              </li>
+              <li>
+                <p class="s_text">
+                  განსხვავებული ხასიათის და სირთულეების პროექტები.
+                </p>
+              </li>
+              <li>
+                <p class="s_text">
+                  განხორციელებული როგორც მცირე, ასევე მსხვილი პროექტები.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="img">
+            <img class="photo" src="./photo/magida1.jpg" alt="table" />
+          </div>
         </div>
         <div class="box">
-          <ul>
-            <li><h2 class="h_text">პრიორიტეტები</h2></li>
-            <li>
-              <p class="s_text">
-                შრომისმოყვარე და პასუხიმგებლიანი გუნდი უზრუნველყოფს
-                მომხმარებელის მოთხოვნაზე მაქსიმალურად მორგებულ პროდუქტის შექმნას
-                და მიწოდებას.
-              </p>
-            </li>
-            <li><p class="s_text">ხარისხიანი პროდუქცია უმოკლეს დროში</p></li>
-          </ul>
-          <img class="photo" src="./photo/logo.png" alt="table" />
+          <div class="text">
+            <ul>
+              <li><h2 class="h_text">პრიორიტეტები</h2></li>
+              <li>
+                <p class="s_text">
+                  თქვენს მოთხოვნაზე მორგებულ პროდუქციის შექმნა.
+                </p>
+              </li>
+              <li><p class="s_text">ხარისხიანი პროდუქცია უმოკლეს დროში</p></li>
+            </ul>
+          </div>
+          <div class="img">
+            <img class="photo" src="./photo/magida2.jpg" alt="table" />
+          </div>
         </div>
         <div class="box">
-          <ul>
-            <li><h2 class="h_text">განვითარება</h2></li>
-            <li><p class="s_text">გამოცდილების გაზიარება</p></li>
-            <li><p class="s_text">განახლებადი ინვენტარი და ხელსაწყოები</p></li>
-            <li><p class="s_text">შესაბამის განათლების სერთიფიკატები</p></li>
-            <li><p class="s_text">კარგი სამუშაო გარემო</p></li>
-          </ul>
-          <img class="photo" src="./photo/certificat.jpg" alt="certificate" />
+          <div class="text">
+            <ul>
+              <li><h2 class="h_text">განვითარება</h2></li>
+              <li>
+                <p class="s_text">განახლებადი ინვენტარი და ხელსაწყოები</p>
+              </li>
+              <li><p class="s_text">მეტი სწავლა განვითარებისთვის</p></li>
+            </ul>
+          </div>
+          <div class="img">
+            <img class="photo" src="./photo/z.jpg" alt="constaction" />
+          </div>
         </div>
       </div>
     </main>
+    <div class="movie">
+      <video
+        class="vd"
+        src="./video/32b66d9a64a440ddbdb407337e77301e.mov"
+        controls
+      ></video>
+    </div>
     <footer>
       <div class="contact">
         <ul>
           <li><h2>კონტაქტი</h2></li>
-          <li><p>+995 577 775299</p></li>
-          <li><p>uleush11@gmail.com</p></li>
-          <li><p>ქ. მცხეთა ს. წეროვანი</p></li>
+          <li>
+            <img class="soc" src="./icons/phone-solid-full.svg" alt="phone" />
+            <p>+995 577 775299</p>
+          </li>
+          <li>
+            <img class="soc" src="./icons/meil.svg" alt="email" />
+            <p>uleush11@gmail.com</p>
+          </li>
           <li>
             <a href="https://maps.app.goo.gl/vJw8w2qMoLZptLK4A">
               <img
@@ -153,20 +192,21 @@
                 alt="location"
               />
             </a>
+            <p>წეროვანი, ქ. მცხეთა, საქართველო</p>
           </li>
         </ul>
       </div>
       <div class="contact">
         <ul>
-          <li><h2>Follow us:</h2></li>
+          <li><h2>გამოგვყევი</h2></li>
           <li>
             <a href="https://www.facebook.com/levan.ushikishvili.1">
               <img
                 class="soc"
                 src="./icons/facebook-brands-solid-full.svg"
                 alt="facebook"
-              />
-            </a>
+              /> </a
+            >Facebook
           </li>
           <li>
             <a href="https://www.tiktok.com/@luger1983">
@@ -174,27 +214,22 @@
                 class="soc"
                 src="./icons/tiktok-brands-solid-full.svg"
                 alt="tiktok"
-              />
-            </a>
+              /> </a
+            >Tiktok
           </li>
           <li>
             <a href="https://www.youtube.com/@le1yushika128"
               ><img
                 class="soc"
                 src="./icons/youtube-brands-solid-full.svg"
-                alt="youtube"
-            /></a>
+                alt="youtube" /></a
+            >Youtube
           </li>
         </ul>
       </div>
       <div class="contact">
-        <img
-          class="photo_1"
-          src="./photo/B0CA7B6F-02EB-41D5-A284-5CC894DAE240.png"
-          alt="lu"
-        />
-
-        <p>2026 ყველა უფლება დაცულია</p>
+        <img class="bottom_logo" src="./photo/logo.png" alt="" />
+        <p>© ყველა უფლება დაცულია 2026</p>
       </div>
     </footer>
   </body>
