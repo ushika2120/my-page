@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ka">
   <head>
     <meta charset="UTF-8" />
@@ -11,14 +11,16 @@
       <div class="heading">
         <div class="logo_box">
           <div class="animation">
-            <img class="welder" src="./photo/logo7.png" alt="welder icon" />
+            <img class="welder" src="./photo/logo.png" alt="welder logo" />
           </div>
           <div class="title">
             <h1 class="main_title">LUGER</h1>
           </div>
           <div class="registration">
             <div class="submit">
-              <button class="registr">რეგისტრაცია</button>
+              <button class="registr">
+                <h2 class="h_text">რეგისტრაცია</h2>
+              </button>
             </div>
             <div class="or">
               <img
@@ -28,13 +30,22 @@
               />
             </div>
             <div class="login">
-              <button class="registr">ავტორიზაცია</button>
+              <button class="registr">
+                <h2 class="h_text">ავტორიზაცია</h2>
+              </button>
             </div>
           </div>
         </div>
 
         <div class="conteiner">
-          <div class="navigation">
+          <div class="navigation_box">
+            <a href="#">
+              <img
+                src="./icons/grip-lines-solid-full.svg"
+                alt="menu"
+                class="menu"
+              />
+            </a>
             <nav class="navigation">
               <form action="#">
                 <p class="mainer">მთავარი</p>
@@ -52,7 +63,7 @@
                   <option value="contact">კონტაქტი</option>
                   <option value="adress">მისამართი</option>
                   <option value="mobile">მობილური</option>
-                  <option value="social">სოციალური ქსელი</option>
+                  <option value="meil">ელ.ფოსტა</option>
                 </select>
               </form>
             </nav>
@@ -67,11 +78,13 @@
                 id="lsearch"
                 placeholder="საძიებო სიტყვა ..."
               />
-              <img
-                class="lupa"
-                src="./icons/magnifying-glass-solid-full.svg"
-                alt="lupa"
-              />
+              <a href="#"
+                ><img
+                  class="lupa"
+                  src="./icons/magnifying-glass-solid-full.svg"
+                  alt="lupa"
+                />
+              </a>
             </form>
           </div>
         </div>
@@ -172,7 +185,7 @@
         controls
       ></video>
     </div>
-    <footer>
+    <footer class="end_conteiner">
       <div class="contact">
         <ul>
           <li><h2>კონტაქტი</h2></li>
@@ -205,8 +218,9 @@
                 class="soc"
                 src="./icons/facebook-brands-solid-full.svg"
                 alt="facebook"
-              /> </a
-            >Facebook
+              />
+              <p class="s_text">Facebook</p>
+            </a>
           </li>
           <li>
             <a href="https://www.tiktok.com/@luger1983">
@@ -214,16 +228,19 @@
                 class="soc"
                 src="./icons/tiktok-brands-solid-full.svg"
                 alt="tiktok"
-              /> </a
-            >Tiktok
+              />
+              <p class="s_text">Tiktok</p>
+            </a>
           </li>
           <li>
             <a href="https://www.youtube.com/@le1yushika128"
               ><img
                 class="soc"
                 src="./icons/youtube-brands-solid-full.svg"
-                alt="youtube" /></a
-            >Youtube
+                alt="youtube"
+              />
+              <p class="s_text">Youtube</p>
+            </a>
           </li>
         </ul>
       </div>

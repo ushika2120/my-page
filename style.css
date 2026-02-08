@@ -8,6 +8,14 @@
     border: none;
     outline: none;
   }
+  li {
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+  }
 }
 
 @font-face {
@@ -22,6 +30,26 @@
   font-family: georgian;
   src: url(./fonts/bpg_nino_mtavruli_bold.ttf);
 }
+@font-face {
+  font-family: msblok;
+  src: url(./fonts/MSBlock-4295653137.otf);
+}
+@font-face {
+  font-family: hollow;
+  src: url(./fonts/mg_bitneon_hollow-21847722560.ttf);
+}
+@font-face {
+  font-family: pariz;
+  src: url(./fonts/gl-parizuli-medium-74694320427.ttf);
+}
+@font-face {
+  font-family: pariz_light;
+  src: url(./fonts/gl-parizuli-regular-59309747211.ttf);
+}
+@font-face {
+  font-family: ukraina;
+  src: url(./fonts/DM-Ukraina-80349320221.ttf);
+}
 body {
   width: 100%;
   height: 100vh;
@@ -34,7 +62,7 @@ body {
 
 .heading {
   width: 100%;
-  height: 300px;
+  height: 263px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +80,7 @@ body {
 
 .registration {
   width: 100%;
-  height: 100px;
+  height: 150px;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -67,26 +95,46 @@ body {
 }
 .main_title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 35px;
   font-family: m_popins;
-  color: rgba(16, 177, 213, 0.997);
+  color: rgba(32, 40, 42, 0.997);
+  text-shadow:
+    2px 2px 0 #4074b5,
+    2px -2px 0 #4074b5,
+    -2px 2px 0 #4074b5,
+    -2px -2px 0 #4074b5,
+    2px 0px 0 #4074b5,
+    0px 2px 0 #4074b5,
+    -2px 0px 0 #4074b5,
+    0px -2px 0 #4074b5;
 }
 .losung {
   font-weight: 800;
-  font-size: 52px;
-  font-family: georgian;
-  color: rgb(244, 110, 37);
+  font-size: 28px;
+  font-family: msblok;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: black;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 20px #18d5ff,
+    0 0 30px #18d5ff,
+    0 0 40px #18d5ff,
+    0 0 55px #18d5ff,
+    0 0 75px #18d5ff;
 }
 .registr {
-  width: 150px;
-  height: 30px;
+  width: 180px;
+  height: 35px;
   border-radius: 25px;
-  background-color: rgb(223, 172, 117);
+  background-color: rgb(219, 208, 195);
   border: none;
   outline: none;
-  font-weight: 400;
-  font-size: 12px;
-  font-family: m_popins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .or {
   width: 50px;
@@ -129,9 +177,19 @@ body {
   align-items: center;
 }
 .welder {
-  width: 90px;
+  width: 60px;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 50%;
+}
+.navigation_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  width: 40px;
+  height: 40px;
+  display: none;
 }
 .navigation {
   width: 100%;
@@ -140,19 +198,21 @@ body {
   justify-content: center;
   align-items: center;
   gap: 60px;
+  #contact {
+    width: 120px;
+  }
 }
 .mainer {
-  border-radius: 25px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.114);
   border: none;
   outline: none;
   font-weight: 500;
   font-size: 18px;
   font-family: georgian;
+  line-height: 109%;
+  letter-spacing: 2px;
   color: rgb(242, 232, 220);
-  display: flex;
-  justify-content: end;
-  align-items: center;
 }
 .mainer:hover {
   color: rgb(244, 110, 37);
@@ -174,6 +234,7 @@ body {
   border: none;
   outline: none;
   background-color: rgb(208, 200, 200);
+  padding-left: 20px;
 }
 .lupa {
   width: 25px;
@@ -184,25 +245,25 @@ body {
 }
 .soc_cell {
   width: 100%;
-  height: 100px;
+  height: 30px;
   display: flex;
 }
 .lf_size {
   width: 40%;
-  height: 100px;
+  height: 30px;
   display: flex;
   flex-direction: column;
 }
 .cent {
   width: 20%;
-  height: 100px;
+  height: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .up {
   width: 100%;
-  height: 50px;
+  height: 15px;
   border-bottom: 1px solid gray;
 }
 .main_box {
@@ -224,7 +285,7 @@ body {
   width: 100%;
   height: 500px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
   margin-bottom: 28px;
 }
@@ -237,8 +298,11 @@ body {
   align-items: center;
   border: 2px solid grey;
   background-color: rgba(128, 128, 128, 0.685);
-  border-radius: 16px;
-  gap: 50px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow:
+    rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .text {
@@ -246,9 +310,10 @@ body {
   height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 15px;
+  padding-right: 15px;
 }
 .img {
   width: 100%;
@@ -266,22 +331,28 @@ li {
   gap: 10px;
 }
 .h_text {
-  font-weight: 500;
-  font-size: 22px;
-  font-family: georgian;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: nino;
+  letter-spacing: 1px;
   color: rgb(23, 22, 21);
 }
 
 .s_text {
   font-weight: 500;
-  font-size: 18px;
-  font-family: s_popins;
-  color: rgb(26, 25, 24);
+  font-size: 16px;
+  font-family: pariz;
+  letter-spacing: 1px;
+  color: rgb(83, 81, 80);
+  text-shadow:
+    2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+  margin-left: 10px;
 }
 
 footer {
   width: 100%;
-  height: 200px;
+  height: auto;
   background-color: rgb(219, 208, 195);
   display: flex;
 }
@@ -300,8 +371,6 @@ footer {
 .photo {
   width: 100%;
   height: 250px;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
 }
 .movie {
   width: 100%;
@@ -309,6 +378,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(./photo/shouravsheikh-welding-5708683_1920.jpg);
   background-color: rgba(0, 0, 0, 0.818);
 }
 .vd {
@@ -319,4 +389,167 @@ footer {
   width: 50px;
   height: 50px;
   border-radius: 360px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: pariz;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #403939;
+}
+@media (max-width: 1000px) {
+  .heading {
+    width: 100%;
+    height: 180px;
+  }
+  .registration {
+    height: 50px;
+  }
+
+  .main_box {
+    height: auto;
+  }
+  .head_box {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .losung {
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .soc_cell {
+    margin-top: 80px;
+  }
+  .middel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  .img {
+    display: none;
+  }
+}
+@media (max-width: 830px) {
+  .navigation {
+    display: none;
+  }
+  .menu {
+    display: block;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .logo_box {
+    height: 200px;
+  }
+  .registration {
+    height: 100px;
+    flex-direction: column;
+    margin-left: 0;
+    .registr {
+      height: 30px;
+    }
+  }
+  .animation {
+    height: 60px;
+  }
+
+  .or {
+    display: none;
+  }
+  .losung {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+  }
+  .gsearch {
+    display: none;
+  }
+  .search {
+    width: 45px;
+    height: 30px;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(189, 183, 183);
+  }
+  .end_conteiner {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact {
+    width: 100%;
+    height: auto;
+  }
+  .ul {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 440px) {
+  .animation {
+    margin-left: 15px;
+  }
+  .title {
+    display: none;
+  }
+  .losung {
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 150%;
+  }
+  .soc_cell {
+    margin-top: 80px;
+  }
+
+  .cent {
+    width: 100%;
+  }
+  .middel {
+    width: 350px;
+  }
+  .box {
+    width: 320px;
+    height: 165px;
+    margin-inline: 15px;
+    margin-top: 10px;
+  }
+  .text {
+    width: 100%;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+  .contact {
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
