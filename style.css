@@ -34,35 +34,25 @@
   font-family: msblok;
   src: url(./fonts/MSBlock-4295653137.otf);
 }
-@font-face {
-  font-family: hollow;
-  src: url(./fonts/mg_bitneon_hollow-21847722560.ttf);
-}
+
 @font-face {
   font-family: pariz;
   src: url(./fonts/gl-parizuli-medium-74694320427.ttf);
 }
-@font-face {
-  font-family: pariz_light;
-  src: url(./fonts/gl-parizuli-regular-59309747211.ttf);
-}
-@font-face {
-  font-family: ukraina;
-  src: url(./fonts/DM-Ukraina-80349320221.ttf);
-}
+
 body {
   width: 100%;
   height: 100vh;
   background-image: url(./photo/man-weld.jpg);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   position: relative;
 }
 
 .heading {
   width: 100%;
-  height: 263px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,14 +70,14 @@ body {
 
 .registration {
   width: 100%;
-  height: 150px;
+  height: 80px;
   display: flex;
   justify-content: end;
   align-items: center;
   gap: 15px;
   margin-right: 30px;
 }
-.title {
+/* .title {
   width: 150px;
   display: flex;
   flex-direction: column;
@@ -107,7 +97,7 @@ body {
     0px 2px 0 #4074b5,
     -2px 0px 0 #4074b5,
     0px -2px 0 #4074b5;
-}
+} */
 .losung {
   font-weight: 800;
   font-size: 28px;
@@ -164,7 +154,7 @@ body {
 
 .conteiner {
   width: 100%;
-  height: 100px;
+  height: 30px;
   display: flex;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.81);
@@ -269,14 +259,14 @@ body {
 }
 .main_box {
   width: 100%;
-  height: 1300px;
+  height: 1350px;
 
   display: flex;
   flex-direction: column;
 }
 .head_box {
   width: 100%;
-  height: 800px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -297,13 +287,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid grey;
+
+  border-bottom: none;
   background-color: white;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  box-shadow:
-    rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .text {
@@ -331,7 +320,7 @@ li {
 }
 .h_text {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   font-family: georgian;
   letter-spacing: 1px;
   color: rgb(23, 22, 21);
@@ -340,9 +329,9 @@ li {
 .s_text {
   font-weight: 500;
   font-size: 17px;
-  font-family: pariz_light;
+  font-family: georgian;
   letter-spacing: 2px;
-  color: rgb(16, 16, 16);
+  color: rgb(58, 53, 53);
   margin-left: 10px;
 }
 
@@ -368,18 +357,31 @@ footer {
   width: 100%;
   height: 250px;
 }
-.movie {
+.movie_box {
   width: 100%;
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   background-image: url(./photo/shouravsheikh-welding-5708683_1920.jpg);
   background-color: rgba(0, 0, 0, 0.818);
+}
+.lf_cube {
+  width: 20%;
+  height: 80%;
+  border-radius: 16px;
+  border: 1px solid gold;
 }
 .vd {
   width: 600px;
   height: 300px;
+}
+.rt_cube {
+  width: 20%;
+  height: 80%;
+  border-radius: 16px;
+  border: 1px solid gold;
 }
 .bottom_logo {
   width: 50px;
